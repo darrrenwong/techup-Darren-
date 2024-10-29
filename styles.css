@@ -1,0 +1,15 @@
+.title {
+    color: red;
+background-color: blueviolet;
+
+text-align: left;
+border: 10px black;
+
+padding-top: 20px;
+padding-bottom: 20px;
+
+margin-bottom: 100px;
+}
+#important {
+    color: blue;
+}
