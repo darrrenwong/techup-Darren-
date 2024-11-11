@@ -1,14 +1,51 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Techup Darren</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <h1 class="title" id="important">Welcome to my world</h1>
-        <h2 class="title">Rejoice! Rojoice! Rejoice!</h2>
-        <h3>APT APT APT APT APT APT!!!</h3>
-        <p>What is up, my brother & sister</p>
-<a href="https://techup.live" class=”>Check out the most enjoyable class</a>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartPantry</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>SmartPantry</h1>
+    <nav>
+      <ul>
+        <li><a href="#meal-planner">Meal Planner</a></li>
+        <li><a href="#recipes">Recipe Suggestions</a></li>
+        <li><a href="#pantry">Pantry Tracker</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="meal-planner">
+    <h2>Meal Planner</h2>
+    <button id="addMealBtn">Add Meal</button>
+    <div id="mealList">
+      <!-- Meal items will be dynamically added here -->
+    </div>
+  </section>
+
+  <section id="recipes">
+    <h2>Recipe Suggestions</h2>
+    <button id="generateRecipesBtn">Generate Recipes</button>
+    <div id="recipeList">
+      <!-- Recipe suggestions will appear here -->
+    </div>
+  </section>
+
+  <section id="pantry">
+    <h2>Pantry Tracker</h2>
+    <input type="text" id="pantrySearch" placeholder="Search Pantry Items">
+    <div id="pantryItems">
+      <!-- Pantry items will be listed here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 SmartPantry. All Rights Reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
 </html>
