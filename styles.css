@@ -1,138 +1,329 @@
-/* General styles for the brand section */
+/* General styles and resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #faf6f2;
+}
+
+/* Enhanced brand section */
 .brand-section {
-    background-color: #ffdfba; /* Light peach background */
-    padding: 20px 0;
-    text-align: center;
-    border-bottom: 2px solid #ccc;
-  }
-  
-  .brand-name {
-    font-size: 3rem;
-    color: #003366; /* Dark blue text */
-    font-weight: bold;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .brand-icon {
-    font-size: 3.5rem;
-    margin-right: 10px;
-  }
-  
-  .slogan {
-    font-size: 1.5rem;
-    color: #333;
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
-  /* Styling for the avatar */
-  .avatar {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .avatar-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  .welcome h1 {
-    font-size: 2rem;
-    text-align: center;
-    color: #003366; /* Dark blue text */
-  }
-  
-  /* Styling for the quick start recommendation section */
-  .recommendations {
-    margin-top: 40px;
-  }
-  
-  .recommendation-cards {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-  }
-  
-  .card {
-    background-color: #ffdfba; /* Light peach background */
-    padding: 15px;
-    width: 250px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .card h3 {
-    font-size: 1.6rem;
-    color: #003366; /* Dark blue text */
-    margin-bottom: 30px;
-  }
-  
-  .card p {
-    font-size: 1rem;
-  }
-  
-  /* Styling for the ingredient section */
-.ingredients h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
+  background: linear-gradient(135deg, #ffdfba, #ffe8cc);
+  padding: 30px 0;
   text-align: center;
-  color: #003366; /* Dark blue text */
+  border-bottom: 2px solid rgba(204, 204, 204, 0.5);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.brand-name {
+  font-size: 3.5rem;
+  color: #003366;
+  font-weight: 800;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brand-name img {
+  transition: transform 0.3s ease;
+}
+
+.brand-name img:hover {
+  transform: scale(1.05);
+}
+
+.brand-icon {
+  font-size: 3.5rem;
+  margin-right: 15px;
+}
+
+.slogan {
+  font-size: 1.6rem;
+  color: #444;
+  margin-top: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Enhanced Navigation Links */
+.navigation-links {
+  margin: 25px auto;
+  padding: 15px 0;
+  background-color: rgba(255, 243, 230, 0.9);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 800px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.navigation-links a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.navigation-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #003366;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navigation-links a:hover {
+  background-color: #003366;
+  color: #ffdfba;
+  transform: translateY(-2px);
+}
+
+.navigation-links a:hover::after {
+  width: 80%;
+}
+
+/* Styling for the avatar */
+.avatar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.avatar-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.welcome h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #003366;
+}
+
+/* Styling for the quick start recommendation section */
+.recommendations {
+  margin: 40px auto;
+  padding: 0 40px;
+  max-width: 1400px;
+}
+
+.recommendation-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  color: #003366;
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Styling for the ingredient section */
+.ingredients {
+  margin: 40px auto;
+  padding: 0 40px;
+  max-width: 1400px;
+}
+
+.ingredients h2 {
+  font-size: 2.2rem;
+  margin: 40px 0 30px;
+  text-align: center;
+  color: #003366;
+  font-weight: 700;
 }
 
 .ingredient-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust grid for more ingredients */
-  gap: 30px; /* Space between boxes */
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
 }
 
 .ingredient {
   background-color: #f4f4f4;
-  padding: 15px;
+  height: 200px;
+  aspect-ratio: 1;
+  padding: 20px;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  height: 200px;
-  width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid black; /* Black border around each box */
+  border: 2px solid #e0e0e0;
   transition: transform 0.3s ease;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 250px;
 }
 
 .ingredient:hover {
-  transform: scale(1.05); /* Hover effect to make the boxes pop */
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .ingredient-icon {
-  font-size: 3rem; /* Increased icon size */
-  margin-bottom: 10px;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #003366;
 }
 
 .ingredient p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #333;
+  font-weight: 500;
+  margin: 0;
 }
-  
-  /* Add specific styles for "Quick Start Recommendations" titles */
-  .quick-start-title {
-    color: #003366; /* Dark blue text */
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 30px;
+
+/* Quick Start Title Enhancement */
+.quick-start-title {
+  color: #003366;
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 40px 0;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.quick-start-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #003366, transparent);
+}
+
+/* Responsive Design */
+@media (min-width: 1200px) {
+  .recommendation-cards {
+      grid-template-columns: repeat(4, 1fr);
   }
   
+  .ingredient-grid {
+      grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1199px) {
+  .recommendation-cards {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .ingredient-grid {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .recommendation-cards {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .ingredient-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation-links {
+      flex-direction: column;
+      gap: 15px;
+      padding: 15px;
+  }
+  
+  .brand-name {
+      font-size: 2.5rem;
+  }
+  
+  .slogan {
+      font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .recommendation-cards {
+      grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .ingredient-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      padding: 10px;
+  }
+  
+  .ingredient {
+      height: 180px;
+  }
+  
+  .recommendations,
+  .ingredients {
+      padding: 0 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .ingredient-grid {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
