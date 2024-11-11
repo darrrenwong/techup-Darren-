@@ -84,49 +84,49 @@
   }
   
   /* Styling for the ingredient section */
-  .ingredients h2 {
-    font-size: 1.8rem;
-    margin-bottom: 60px;
-    text-align: center;
-    color: #003366; /* Dark blue text */
-  }
-  
-  .ingredient-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Decreased the min size for boxes */
-    gap: 40px; /* Increased gap to add more space between boxes */
-    justify-items: center;
-  }
-  
-  .ingredient {
-    background-color: #f4f4f4;
-    padding: 15px; /* Reduced padding for smaller boxes */
-    border-radius: 10px; /* Rounded corners */
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    height: 200px;  /* Reduced height */
-    width: 200px;   /* Reduced width */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid black;  /* Black border around each box */
-    transition: transform 0.3s ease;
-  }
-  
-  .ingredient:hover {
-    transform: scale(1.05); /* Slight hover effect to make the boxes pop */
-  }
-  
-  .ingredient-icon {
-    font-size: 2.2rem; /* Adjusted icon size */
-    margin-bottom: 10px;
-  }
-  
-  .ingredient p {
-    font-size: 1rem;
-    color: #333;
-  }
+.ingredients h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #003366; /* Dark blue text */
+}
+
+.ingredient-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust grid for more ingredients */
+  gap: 30px; /* Space between boxes */
+  justify-items: center;
+}
+
+.ingredient {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black; /* Black border around each box */
+  transition: transform 0.3s ease;
+}
+
+.ingredient:hover {
+  transform: scale(1.05); /* Hover effect to make the boxes pop */
+}
+
+.ingredient-icon {
+  font-size: 3rem; /* Increased icon size */
+  margin-bottom: 10px;
+}
+
+.ingredient p {
+  font-size: 1rem;
+  color: #333;
+}
   
   /* Add specific styles for "Quick Start Recommendations" titles */
   .quick-start-title {
