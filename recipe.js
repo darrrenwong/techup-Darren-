@@ -88,55 +88,55 @@ const recipes = {
     ],
     dinner: [
         {
-            title: "Salmon with Quinoa",
-            image: "/images/salmon.png"
+            title: "Chicken & Spinach Stuffed Bell Peppers",
+            image: "/images/stuffed.png"
         },
         {
-            title: "Pasta Carbonara",
-            image: "/images/pasta.png"
+            title: "Salmon & Edamame Stir-Fry",
+            image: "/images/eda.png"
         },
         {
-            title: "Steak with Vegetables",
-            image: "/images/steak.png"
+            title: "Zucchini & Ground Beef Casserole",
+            image: "/images/zucc.png"
         },
         {
-            title: "Grilled Chicken Breast",
-            image: "/images/grilled-chicken.png"
+            title: "Spiced Grilled Chicken",
+            image: "/images/grilled.png"
         },
         {
-            title: "Shrimp Scampi",
-            image: "/images/shrimp-scampi.png"
+            title: "Egg & Veggie Frittata",
+            image: "/images/fritter.png"
         },
         {
-            title: "Vegetarian Curry",
-            image: "/images/curry.png"
+            title: "Grilled Salmon & Vegetables",
+            image: "/images/vegesalmon.png"
         },
         {
-            title: "Beef Stir Fry",
-            image: "/images/stir-fry.png"
+            title: "Chicken & Carrot Soup",
+            image: "/images/carrot soup.png"
         },
         {
-            title: "Baked Cod",
-            image: "/images/baked-cod.png"
+            title: "Spiced Potato",
+            image: "/images/spiced potato.png"
         },
         {
-            title: "Eggplant Parmesan",
-            image: "/images/eggplant-parm.png"
+            title: "Baked Cod with Tomato",
+            image: "/images/baked cod.png"
         },
         {
-            title: "Turkey Meatballs",
-            image: "/images/meatballs.png"
+            title: "ABC Soup",
+            image: "/images/ABC soup.png"
         }
         // Add more dinner recipes here
     ],
     snacks: [
         {
-            title: "Greek Yogurt with Honey",
-            image: "/images/yogurt.png"
+            title: "Avocado-Yogurt Dipy",
+            image: "/images/dip.png"
         },
         {
-            title: "Mixed Nuts",
-            image: "/images/nuts.png"
+            title: "Oven Baked Sweet Potato Fries",
+            image: "/images/sweet potato.png"
         },
         {
             title: "Apple with Peanut Butter",
