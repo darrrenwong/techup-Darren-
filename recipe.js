@@ -177,41 +177,53 @@ const recipes = {
 // Function to get random recipe from a category
 function getRandomRecipe(category) {
     const categoryRecipes = recipes[category];
+    if (!categoryRecipes) {
+        console.error(`Category ${category} not found`);
+        return null;
+    }
     return categoryRecipes[Math.floor(Math.random() * categoryRecipes.length)];
 }
-
-// ... existing recipe data ...
 
 // Function to update a single category
 function updateCategory(category) {
     const recipe = getRandomRecipe(category);
-    document.getElementById(`${category}-title`).textContent = recipe.title;
-    const img = document.getElementById(`${category}-img`);
-    img.src = recipe.image;
-    img.alt = recipe.title;
-}
+    if (!recipe) return;
 
-// Add click event listeners to refresh buttons
-function initializeRefreshButtons() {
-    const categories = ['breakfast', 'lunch', 'dinner', 'snacks'];
-    categories.forEach(category => {
-        const button = document.getElementById(`${category}-refresh`);
-        if (button) {
-            button.addEventListener('click', () => updateCategory(category));
-        }
-    });
+    const titleElement = document.querySelector(`#${category}-title`);
+    const imgElement = document.querySelector(`#${category}-img`);
+    
+    if (!titleElement || !imgElement) {
+        console.error(`Elements for ${category} not found`);
+        return;
+    }
+
+    titleElement.textContent = recipe.title;
+    imgElement.src = recipe.image;
+    imgElement.alt = recipe.title;
 }
 
 // Function to refresh all recipes
 function refreshAllRecipes() {
-    updateCategory('breakfast');
-    updateCategory('lunch');
-    updateCategory('dinner');
-    updateCategory('snacks');
+    const categories = ['breakfast', 'lunch', 'dinner', 'snacks'];
+    categories.forEach(category => updateCategory(category));
 }
 
-// Initialize recipes and buttons when page loads
-window.onload = () => {
+// Initialize recipes when page loads
+document.addEventListener('DOMContentLoaded', () => {
     refreshAllRecipes();
-    initializeRefreshButtons();
-};
+    
+    // Add click listeners for individual category refresh buttons
+    const categories = ['breakfast', 'lunch', 'dinner', 'snacks'];
+    categories.forEach(category => {
+        const refreshButton = document.querySelector(`#refresh-${category}`);
+        if (refreshButton) {
+            refreshButton.addEventListener('click', () => updateCategory(category));
+        }
+    });
+
+    // Add click listener for refresh all button
+    const refreshAllButton = document.querySelector('#refresh-all');
+    if (refreshAllButton) {
+        refreshAllButton.addEventListener('click', refreshAllRecipes);
+    }
+});

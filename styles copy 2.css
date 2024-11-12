@@ -264,3 +264,40 @@ body {
 .card[id^="lunch"] { border-top: 4px solid #54A0FF; }
 .card[id^="dinner"] { border-top: 4px solid #2ED573; }
 .card[id^="snack"] { border-top: 4px solid #FF6B6B; }
+
+/* Individual refresh buttons */
+.refresh-btn {
+  background: none;
+  border: none;
+  font-size: 1.8em;
+  cursor: pointer;
+  padding: 8px;
+  color: #666;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1;
+}
+
+/* Refresh all button */
+.refresh-all-btn {
+  background: #fff;
+  border: 2px solid #e1e8ed;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 1rem 2rem auto; /* Changed: removed left margin auto */
+  transition: all 0.3s ease;
+  max-width: fit-content; /* Added: ensures button width fits content */
+}
+
+.refresh-all-btn:hover {
+  background: #f8f9fa;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
