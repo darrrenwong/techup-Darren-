@@ -121,17 +121,20 @@ body {
 /* Section Header Styles */
 .section-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;  /* Centers the content horizontally */
   align-items: center;
   max-width: 1400px;
   margin: 0 auto 2rem auto;
   padding: 0 1rem;
+  text-align: center;
 }
 
 .section-header h2 {
   font-size: 2.2rem;
   font-weight: 700;
   color: #2c3e50;
+  text-align: center;  /* Centers the category titles */
+  width: 100%;        /* Ensures the text takes full width */
 }
 
 .refresh-btn {
@@ -188,6 +191,10 @@ body {
   padding: 1rem;
   font-size: 1.2rem;
   border-bottom: 1px solid #e1e8ed;
+  text-align: center;  /* Centers the text */
+  display: flex;
+  justify-content: center;  /* Centers flex items horizontally */
+  align-items: center;      /* Centers flex items vertically */
 }
 
 .card p {
@@ -202,6 +209,10 @@ body {
   height: 200px;
   object-fit: cover;
   border-bottom: 1px solid #e1e8ed;
+  /* Add these properties to center the image */
+  display: block;
+  margin: 0 auto;
+  object-position: center;
 }
 
 /* Responsive Design */
