@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Planner Dashboard</title>
+  <link rel="stylesheet" href="styles copy 2.css">
+</head>
+<body>
+  <!-- Brand Section -->
+  <section class="brand-section">
+    <h1 class="brand-name">
+      <img src="/images/Banner.png" style="height: 250px; width: 250px;" alt="Bite Right Banner"> Bite Right
+    </h1>
+    <p class="slogan">Smart Eating Starts with a Bite</p>
+    <nav class="navigation-links">
+        <a href="/Home Page.html">
+          <img src="/images/Home page.png" style="height: 90px; width: 90px;" alt="Home Icon" class="nav-icon">
+            Homepage
+        </a>
+        <a href="/index.html">
+          <img src="/images/Menu.png" style="height: 90px; width: 90px;" alt="Menu Icon" class="nav-icon">
+            Food Menu
+        </a>
+        <a href="/magic-kitchen.html">
+          <img src="/images/Recipe.png" style="height: 90px; width: 90px;" alt="Magic Icon" class="nav-icon"> 
+          TasteLab
+        </a>
+        <a href="/about.html">
+          <img src="/images/about me.png" style="height: 90px; width: 90px;"alt="About Icon" class="nav-icon">
+            About Me
+        </a>
+    </nav>
+  </section>
+
+  <div class="container">
+    <!-- Welcome Title Section -->
+    <section class="welcome">
+      <div class="avatar">
+      </div>
+      <section>
+        <section style="display: flex; align-items: center; justify-content: center;">
+          <h1 style="margin-right: 10px;">Welcome Darren, what do you want to eat today?</h1>
+          <img src="/images/image copy.png" style="height: 100px; width: 100px;" alt="Avatar">
+        </section>                   
+
+<!-- Quick Start Recommendations Section -->
+<section class="recommendations">
+  <div class="section-header">
+    <h2>Quick Start Recommendations</h2>
+    <button onclick="refreshAllRecipes()" class="refresh-btn">
+      🔄 New Suggestions
+    </button>
+  </div>
+  <div class="recommendation-cards">
+    <div class="card" id="breakfast-card">
+      <h3>Breakfast</h3>
+      <p id="breakfast-title"></p>
+      <img id="breakfast-img" style="height: 250px; width: 250px;" />
+    </div>
+    <div class="card" id="lunch-card">
+      <h3>Lunch</h3>
+      <p id="lunch-title"></p>
+      <img id="lunch-img" style="height: 250px; width: 250px;" />
+    </div>
+    <div class="card" id="dinner-card">
+      <h3>Dinner</h3>
+      <p id="dinner-title"></p>
+      <img id="dinner-img" style="height: 250px; width: 250px;" />
+    </div>
+    <div class="card" id="snack-card">
+      <h3>Snacks</h3>
+      <p id="snack-title"></p>
+      <img id="snack-img" style="height: 250px; width: 250px;" />
+    </div>
+  </div>
+</section>
+   
