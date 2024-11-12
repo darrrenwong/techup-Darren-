@@ -1283,12 +1283,6 @@ function updateCategory(category) {
     titleElement.textContent = recipe.title;
     imgElement.src = recipe.image;
     imgElement.alt = recipe.title;
-
-    // Add click listeners for recipe details
-    titleElement.style.cursor = 'pointer';
-    titleElement.onclick = () => showRecipeDetails(recipe);
-    imgElement.style.cursor = 'pointer';
-    imgElement.onclick = () => showRecipeDetails(recipe);
 }
 
 // Function to refresh all recipes
@@ -1299,29 +1293,14 @@ function refreshAllRecipes() {
 
 // Initialize recipes when page loads
 document.addEventListener('DOMContentLoaded', () => {
-    // Initial load of all recipes
     refreshAllRecipes();
     
     // Add click listeners for individual category refresh buttons
     const categories = ['breakfast', 'lunch', 'dinner', 'snacks'];
     categories.forEach(category => {
-        // Add click listener for individual refresh buttons
         const refreshButton = document.querySelector(`#refresh-${category}`);
         if (refreshButton) {
-            refreshButton.addEventListener('click', () => {
-                updateCategory(category);
-            });
-        }
-
-        // Add click listener for category containers
-        const categoryContainer = document.querySelector(`#${category}-container`);
-        if (categoryContainer) {
-            categoryContainer.addEventListener('click', (event) => {
-                // Only trigger if clicking the container itself, not its children
-                if (event.target === categoryContainer) {
-                    updateCategory(category);
-                }
-            });
+            refreshButton.addEventListener('click', () => updateCategory(category));
         }
     });
 
@@ -1331,7 +1310,6 @@ document.addEventListener('DOMContentLoaded', () => {
         refreshAllButton.addEventListener('click', refreshAllRecipes);
     }
 });
-
 function showRecipeDetails(recipe) {
     // Create or get modal container
     let modal = document.getElementById('recipe-modal');
@@ -1383,4 +1361,29 @@ function showRecipeDetails(recipe) {
             modal.style.display = 'none';
         }
     }
+}
+
+// Modify your updateCategory function to add click listeners
+function updateCategory(category) {
+    const recipe = getRandomRecipe(category);
+    if (!recipe) return;
+
+    const titleElement = document.querySelector(`#${category}-title`);
+    const imgElement = document.querySelector(`#${category}-img`);
+    
+    if (!titleElement || !imgElement) {
+        console.error(`Elements for ${category} not found`);
+        return;
+    }
+
+    titleElement.textContent = recipe.title;
+    imgElement.src = recipe.image;
+    imgElement.alt = recipe.title;
+
+    // Add click listener to title
+    titleElement.style.cursor = 'pointer';
+    titleElement.onclick = () => showRecipeDetails(recipe);
+    // Add click listener to image
+    imgElement.style.cursor = 'pointer';
+    imgElement.onclick = () => showRecipeDetails(recipe);
 }
