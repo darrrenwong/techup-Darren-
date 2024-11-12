@@ -663,40 +663,307 @@ const recipes = {
         },
         {
             title: "Salmon & Edamame Stir-Fry",
-            image: "/images/eda.png"
+            image: "/images/eda.png",
+            prepTime: "20 minutes",
+            calories: 360,
+            ingredients: [
+                "2 salmon fillets, cut into chunks",
+                "1 cup shelled edamame",
+                "1 bell pepper, sliced",
+                "2 tablespoons soy sauce",
+                "2 cloves garlic, minced",
+                "1 tablespoon ginger, minced",
+                "1 tablespoon olive oil",
+                "Salt and pepper to taste"
+            ],
+            steps: [
+                "Season salmon chunks with salt and pepper",
+                "Heat olive oil in a large pan or wok",
+                "Cook salmon until almost done (3-4 minutes)",
+                "Remove salmon and set aside",
+                "In same pan, stir-fry bell pepper",
+                "Add garlic and ginger",
+                "Add edamame and cook until heated",
+                "Return salmon to pan",
+                "Add soy sauce and stir to combine",
+                "Serve hot"
+            ],
+            nutritionInfo: {
+                protein: "33g",
+                carbs: "15g",
+                fats: "22g",
+                fiber: "5g"
+            }
         },
         {
-            title: "Zucchini & Ground Beef Casserole",
-            image: "/images/zucc.png"
-        },
-        {
-            title: "Spiced Grilled Chicken",
-            image: "/images/grilled.png"
-        },
-        {
-            title: "Egg & Veggie Frittata",
-            image: "/images/fritter.png"
-        },
-        {
-            title: "Grilled Salmon & Vegetables",
-            image: "/images/vegesalmon.png"
-        },
-        {
-            title: "Chicken & Carrot Soup",
-            image: "/images/carrot soup.png"
-        },
-        {
-            title: "Spiced Potato",
-            image: "/images/spiced potato.png"
-        },
-        {
-            title: "Baked Cod with Tomato",
-            image: "/images/baked cod.png"
-        },
-        {
-            title: "ABC Soup",
-            image: "/images/ABC soup.png"
+        title: "Zucchini & Ground Beef Casserole",
+        image: "/images/zucc.png",
+        prepTime: "45 minutes",
+        calories: 380,
+        ingredients: [
+            "1 lb ground beef",
+            "3 medium zucchini, sliced",
+            "1 onion, diced",
+            "2 cups shredded cheese",
+            "2 cloves garlic, minced",
+            "2 tomatoes, diced",
+            "1 tablespoon olive oil",
+            "Salt and pepper to taste"
+        ],
+        steps: [
+            "Preheat oven to 375°F (190°C)",
+            "Heat olive oil in a large pan",
+            "Cook onion and garlic until softened",
+            "Add ground beef and cook until browned",
+            "Season with salt and pepper",
+            "Layer half the zucchini in a baking dish",
+            "Add half the meat mixture",
+            "Add half the diced tomatoes",
+            "Repeat layers with remaining zucchini, meat and tomatoes",
+            "Sprinkle with cheese",
+            "Bake for 25-30 minutes until bubbly",
+            "Let rest 5 minutes before serving"
+        ],
+        nutritionInfo: {
+            protein: "32g",
+            carbs: "10g",
+            fats: "26g",
+            fiber: "3g"
         }
+    },
+    {
+        title: "Spiced Grilled Chicken",
+        image: "/images/grilled.png",
+        prepTime: "30 minutes",
+        calories: 320,
+        ingredients: [
+            "4 chicken breasts",
+            "2 cloves garlic, minced",
+            "1 teaspoon paprika",
+            "1 teaspoon cumin",
+            "1 teaspoon oregano",
+            "1 tablespoon olive oil",
+            "Salt and pepper to taste"
+        ],
+        steps: [
+            "Mix all spices with olive oil to create marinade",
+            "Season chicken with salt and pepper",
+            "Coat chicken with spice mixture",
+            "Let marinate for 15 minutes",
+            "Preheat grill or grill pan to medium-high",
+            "Grill chicken for 6-7 minutes per side",
+            "Check internal temperature reaches 165°F",
+            "Let rest for 5 minutes before serving",
+            "Serve hot"
+        ],
+        nutritionInfo: {
+            protein: "38g",
+            carbs: "2g",
+            fats: "18g",
+            fiber: "1g"
+        }
+    },
+    {
+        title: "Egg & Veggie Frittata",
+        image: "/images/fritter.png",
+        prepTime: "25 minutes",
+        calories: 310,
+        ingredients: [
+            "8 large eggs",
+            "1 cup spinach",
+            "1 bell pepper, diced",
+            "1 onion, diced",
+            "1 cup shredded cheese",
+            "1 tablespoon olive oil",
+            "Salt and pepper to taste"
+        ],
+        steps: [
+            "Preheat oven to 375°F (190°C)",
+            "Whisk eggs with salt and pepper",
+            "Heat olive oil in oven-safe skillet",
+            "Sauté onion until softened",
+            "Add bell pepper and cook for 2 minutes",
+            "Add spinach and cook until wilted",
+            "Pour beaten eggs over vegetables",
+            "Top with shredded cheese",
+            "Cook on stovetop for 5 minutes",
+            "Transfer to oven for 10-12 minutes until set",
+            "Let cool slightly before serving"
+        ],
+        nutritionInfo: {
+            protein: "24g",
+            carbs: "8g",
+            fats: "22g",
+            fiber: "2g"
+        }
+    },
+    {
+        title: "Grilled Salmon & Vegetables",
+        image: "/images/vegesalmon.png",
+        prepTime: "30 minutes",
+        calories: 380,
+        ingredients: [
+            "2 salmon fillets",
+            "2 zucchini, sliced",
+            "1 bell pepper, sliced",
+            "1 onion, chunked",
+            "2 tablespoons olive oil",
+            "2 cloves garlic, minced",
+            "Salt and pepper to taste"
+        ],
+        steps: [
+            "Preheat grill to medium-high heat",
+            "Brush salmon with olive oil",
+            "Season salmon with garlic, salt, and pepper",
+            "Toss vegetables with remaining oil and seasonings",
+            "Place salmon skin-side down on grill",
+            "Add vegetables to grill in a basket",
+            "Grill salmon for 4-5 minutes per side",
+            "Grill vegetables until tender-crisp",
+            "Check salmon is cooked through",
+            "Serve hot"
+        ],
+        nutritionInfo: {
+            protein: "34g",
+            carbs: "12g",
+            fats: "24g",
+            fiber: "4g"
+        }
+    },
+    {
+        title: "Chicken & Carrot Soup",
+        image: "/images/carrot soup.png",
+        prepTime: "35 minutes",
+        calories: 280,
+        ingredients: [
+            "2 chicken breasts, diced",
+            "3 carrots, chopped",
+            "1 onion, diced",
+            "2 celery stalks, chopped",
+            "2 cloves garlic, minced",
+            "6 cups chicken broth",
+            "1 tablespoon olive oil",
+            "Salt and pepper to taste"
+        ],
+        steps: [
+            "Heat olive oil in a large pot",
+            "Cook diced chicken until no longer pink",
+            "Remove chicken and set aside",
+            "In same pot, cook onion and garlic",
+            "Add carrots and celery, cook for 5 minutes",
+            "Add chicken broth and bring to boil",
+            "Reduce heat and simmer for 15 minutes",
+            "Return chicken to pot",
+            "Cook additional 5 minutes",
+            "Season with salt and pepper",
+            "Serve hot"
+        ],
+        nutritionInfo: {
+            protein: "26g",
+            carbs: "18g",
+            fats: "12g",
+            fiber: "4g"
+        }
+    },
+    {
+        title: "Spiced Potato",
+        image: "/images/spiced potato.png",
+        prepTime: "30 minutes",
+        calories: 220,
+        ingredients: [
+            "4 medium potatoes, cubed",
+            "1 onion, diced",
+            "2 cloves garlic, minced",
+            "1 teaspoon paprika",
+            "1 teaspoon cumin",
+            "1 tablespoon olive oil",
+            "Salt and pepper to taste"
+        ],
+        steps: [
+            "Cut potatoes into even-sized cubes",
+            "Heat olive oil in a large pan",
+            "Add onion and cook until softened",
+            "Add garlic and cook for 1 minute",
+            "Add potatoes and spices",
+            "Stir to coat potatoes evenly",
+            "Cover and cook on medium heat for 15-20 minutes",
+            "Stir occasionally until potatoes are tender",
+            "Season with salt and pepper",
+            "Serve hot"
+        ],
+        nutritionInfo: {
+            protein: "4g",
+            carbs: "38g",
+            fats: "7g",
+            fiber: "4g"
+        }
+    },
+    {
+        title: "Baked Cod with Tomato",
+        image: "/images/baked cod.png",
+        prepTime: "30 minutes",
+        calories: 260,
+        ingredients: [
+            "2 cod fillets",
+            "2 tomatoes, sliced",
+            "2 cloves garlic, minced",
+            "1 tablespoon olive oil",
+            "1 tablespoon fresh basil",
+            "Salt and pepper to taste"
+        ],
+        steps: [
+            "Preheat oven to 400°F (200°C)",
+            "Season cod fillets with salt and pepper",
+            "Place cod in baking dish",
+            "Layer sliced tomatoes on top",
+            "Sprinkle with minced garlic",
+            "Drizzle with olive oil",
+            "Add fresh basil",
+            "Bake for 15-20 minutes",
+            "Check fish flakes easily with fork",
+            "Serve hot"
+        ],
+        nutritionInfo: {
+            protein: "32g",
+            carbs: "8g",
+            fats: "12g",
+            fiber: "2g"
+        }
+    },
+    {
+        title: "ABC Soup",
+        image: "/images/ABC soup.png",
+        prepTime: "45 minutes",
+        calories: 220,
+        ingredients: [
+            "2 carrots, chopped",
+            "2 potatoes, cubed",
+            "2 tomatoes, quartered",
+            "1 onion, chopped",
+            "2 celery stalks, chopped",
+            "8 cups water",
+            "1/2 lb chicken, chopped",
+            "Salt and pepper to taste"
+        ],
+        steps: [
+            "Bring water to boil in a large pot",
+            "Add chicken and simmer for 10 minutes",
+            "Add carrots, potatoes, and onion",
+            "Simmer for 15 minutes",
+            "Add tomatoes and celery",
+            "Continue cooking for 10-15 minutes",
+            "Season with salt and pepper",
+            "Check vegetables are tender",
+            "Check chicken is cooked through",
+            "Serve hot"
+        ],
+        nutritionInfo: {
+            protein: "18g",
+            carbs: "24g",
+            fats: "6g",
+            fiber: "4g"
+        }
+    },
         // Add more dinner recipes here
     ],
     snacks: [
