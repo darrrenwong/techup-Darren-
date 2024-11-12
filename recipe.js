@@ -969,44 +969,290 @@ const recipes = {
     snacks: [
         {
             title: "Avocado-Yogurt Dip",
-            image: "/images/dip.png"
+            image: "/images/dip.png",
+            prepTime: "10 minutes",
+            calories: 130,
+            ingredients: [
+                "1 ripe avocado",
+                "1/2 cup plain Greek yogurt",
+                "Salt and pepper to taste"
+            ],
+            steps: [
+                "Cut and scoop out avocado",
+                "Mash avocado in a bowl",
+                "Add Greek yogurt",
+                "Season with salt and pepper",
+                "Mix until smooth and creamy",
+                "Chill for 30 minutes before serving",
+                "Serve with vegetables or chips"
+            ],
+            nutritionInfo: {
+                protein: "6g",
+                carbs: "7g",
+                fats: "11g",
+                fiber: "4g"
+            }
         },
         {
             title: "Oven Baked Sweet Potato Fries",
-            image: "/images/sweet potato.png"  // Fixed: Use hyphens instead of spaces
+            image: "/images/sweet potato.png",
+            prepTime: "35 minutes",
+            calories: 180,
+            ingredients: [
+                "2 large sweet potatoes",
+                "2 tablespoons olive oil",
+                "1 teaspoon paprika",
+                "Salt and pepper to taste"
+            ],
+            steps: [
+                "Preheat oven to 425°F (220°C)",
+                "Wash and peel sweet potatoes",
+                "Cut into even-sized fries",
+                "Pat dry with paper towels",
+                "Toss with olive oil and seasonings",
+                "Arrange in single layer on baking sheet",
+                "Bake for 20-25 minutes",
+                "Flip halfway through cooking",
+                "Bake until crispy and golden",
+                "Serve hot"
+            ],
+            nutritionInfo: {
+                protein: "2g",
+                carbs: "28g",
+                fats: "7g",
+                fiber: "4g"
+            }
         },
         {
             title: "Apple Wedges & Peanut Butter",
-            image: "/images/apple with pb.png"  // Fixed: Use hyphens instead of spaces
+            image: "/images/apple with pb.png",
+            prepTime: "5 minutes",
+            calories: 200,
+            ingredients: [
+                "1 large apple",
+                "2 tablespoons peanut butter",
+                "Optional: cinnamon for sprinkling"
+            ],
+            steps: [
+                "Wash apple thoroughly",
+                "Core the apple",
+                "Cut apple into wedges",
+                "Arrange on a plate",
+                "Serve with peanut butter for dipping",
+                "Sprinkle with cinnamon if desired"
+            ],
+            nutritionInfo: {
+                protein: "5g",
+                carbs: "25g",
+                fats: "12g",
+                fiber: "5g"
+            }
         },
         {
-            title: "Roasted Sheet-Pan Veggies",
-            image: "/images/pan fry.png"  // Fixed: Use hyphen
+            title: "Roasted Sheet Pan Veggies",
+            image: "/images/pan fry.png",
+            prepTime: "30 minutes",
+            calories: 160,
+            ingredients: [
+                "2 cups broccoli florets",
+                "2 carrots, chopped",
+                "1 bell pepper, chunked",
+                "1 zucchini, sliced",
+                "2 tablespoons olive oil",
+                "Salt and pepper to taste"
+            ],
+            steps: [
+                "Preheat oven to 400°F (200°C)",
+                "Cut all vegetables into similar sizes",
+                "Place vegetables on sheet pan",
+                "Drizzle with olive oil",
+                "Season with salt and pepper",
+                "Toss to coat evenly",
+                "Spread in single layer",
+                "Roast for 20-25 minutes",
+                "Stir halfway through cooking",
+                "Serve hot"
+            ],
+            nutritionInfo: {
+                protein: "4g",
+                carbs: "18g",
+                fats: "8g",
+                fiber: "6g"
+            }
         },
         {
             title: "Air-Fryer Zucchini Fries",
-            image: "/images/z fries.png"  // Fixed: Use hyphen
+            image: "/images/z fries.png",
+            prepTime: "15 minutes",
+            calories: 90,
+            ingredients: [
+                "2 medium zucchini",
+                "1 egg",
+                "1 teaspoon paprika",
+                "Salt and pepper to taste",
+                "Olive oil spray"
+            ],
+            steps: [
+                "Cut zucchini into fry-shaped sticks",
+                "Pat dry with paper towels",
+                "Beat egg in shallow dish",
+                "Season egg with paprika, salt and pepper",
+                "Dip zucchini in seasoned egg",
+                "Spray air fryer basket with olive oil",
+                "Place zucchini in single layer",
+                "Spray lightly with olive oil",
+                "Air fry at 400°F for 10-12 minutes",
+                "Shake basket halfway through",
+                "Serve hot"
+            ],
+            nutritionInfo: {
+                protein: "5g",
+                carbs: "7g",
+                fats: "5g",
+                fiber: "2g"
+            }
         },
         {
             title: "Broccoli With Spices",
-            image: "/images/spiced brocoli.png"  // Fixed: Spelling and hyphen
+            image: "/images/spiced brocoli.png",
+            prepTime: "15 minutes",
+            calories: 85,
+            ingredients: [
+                "2 cups broccoli florets",
+                "1 tablespoon olive oil",
+                "1 teaspoon paprika",
+                "1 teaspoon cumin",
+                "Salt and pepper to taste"
+            ],
+            steps: [
+                "Cut broccoli into even-sized florets",
+                "Heat olive oil in a large pan",
+                "Add broccoli to pan",
+                "Sprinkle with spices",
+                "Stir to coat evenly",
+                "Cook for 5-7 minutes",
+                "Stir occasionally",
+                "Season with salt and pepper",
+                "Serve hot"
+            ],
+            nutritionInfo: {
+                protein: "3g",
+                carbs: "8g",
+                fats: "5g",
+                fiber: "3g"
+            }
         },
         {
-            title: "Mixed-Berry Smoothie",
-            image: "/images/mixed berries.png"  // Fixed: Remove space before .png
+            title: "Mixed Berry Smoothie",
+            image: "/images/mixed berries.png",
+            prepTime: "5 minutes",
+            calories: 210,
+            ingredients: [
+                "1 cup mixed berries (strawberries, blueberries, raspberries)",
+                "1 banana",
+                "1 cup milk",
+                "1/2 cup Greek yogurt",
+                "1 tablespoon honey",
+                "4-5 ice cubes"
+            ],
+            steps: [
+                "Add milk to blender",
+                "Add mixed berries and banana",
+                "Add Greek yogurt",
+                "Add honey",
+                "Add ice cubes",
+                "Blend until smooth",
+                "Add more milk if needed for desired consistency",
+                "Serve immediately"
+            ],
+            nutritionInfo: {
+                protein: "10g",
+                carbs: "34g",
+                fats: "6g",
+                fiber: "6g"
+            }
         },
         {
             title: "Chia Seed Pudding",
-            image: "/images/pudding.png"
+            image: "/images/pudding.png",
+            prepTime: "5 minutes + 4 hours refrigeration",
+            calories: 235,
+            ingredients: [
+                "1/4 cup chia seeds",
+                "1 cup milk",
+                "1 tablespoon honey",
+                "Optional toppings: berries, banana slices"
+            ],
+            steps: [
+                "In a jar or bowl, combine milk and chia seeds",
+                "Add honey",
+                "Stir well to combine",
+                "Let sit for 5 minutes, then stir again",
+                "Cover and refrigerate for at least 4 hours or overnight",
+                "Stir before serving",
+                "Add optional toppings",
+                "Serve chilled"
+            ],
+            nutritionInfo: {
+                protein: "8g",
+                carbs: "27g",
+                fats: "11g",
+                fiber: "10g"
+            }
         },
         {
             title: "Rice Cakes with Peanut Butter",
-            image: "/images/rice cake.png"  // Fixed: Use hyphen
+            image: "/images/rice cake.png",
+            prepTime: "5 minutes",
+            calories: 190,
+            ingredients: [
+                "2 plain rice cakes",
+                "2 tablespoons peanut butter",
+                "Optional toppings: banana slices, berries"
+            ],
+            steps: [
+                "Spread peanut butter evenly on rice cakes",
+                "Add optional toppings if desired",
+                "Serve immediately"
+            ],
+            nutritionInfo: {
+                protein: "8g",
+                carbs: "18g",
+                fats: "12g",
+                fiber: "2g"
+            }
         },
         {
             title: "Fresh Fruit Salad",
-            image: "/images/fruit salad.png"  // Fixed: Use hyphen
-        }
+            image: "/images/fruit salad.png",
+            prepTime: "15 minutes",
+            calories: 120,
+            ingredients: [
+                "1 apple, diced",
+                "1 orange, segmented",
+                "1 cup strawberries, sliced",
+                "1 cup grapes",
+                "1 banana, sliced",
+                "Optional: 1 tablespoon honey"
+            ],
+            steps: [
+                "Wash all fruits thoroughly",
+                "Peel and segment orange",
+                "Core and dice apple",
+                "Slice strawberries",
+                "Slice banana",
+                "Combine all fruits in a bowl",
+                "Add honey if desired",
+                "Gently toss to combine",
+                "Serve immediately"
+            ],
+            nutritionInfo: {
+                protein: "2g",
+                carbs: "30g",
+                fats: "0g",
+                fiber: "5g"
+            }
+        },
         // Add more snack recipes here
     ]
 };
