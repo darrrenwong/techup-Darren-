@@ -3,7 +3,28 @@ const recipes = {
     breakfast: [
         {
             title: "Avocado Toast with Eggs",
-            image: "/images/eggs.png"
+            image: "/images/eggs.png",
+            prepTime: "15 minutes",
+            calories: 350,
+            ingredients: [
+                "2 slices whole grain bread",
+                "1 ripe avocado",
+                "2 eggs",
+                "Salt and pepper to taste"
+            ],
+            steps: [
+                "Toast the bread until golden brown",
+                "Mash the avocado and spread on toast",
+                "Fry or poach eggs to your liking",
+                "Place eggs on top of avocado toast",
+                "Season with salt and pepper"
+            ],
+            nutritionInfo: {
+                protein: "14g",
+                carbs: "30g",
+                fats: "22g",
+                fiber: "8g"
+            }
         },
         {
             title: "Greek Yogurt Berry Bowl",
@@ -227,3 +248,80 @@ document.addEventListener('DOMContentLoaded', () => {
         refreshAllButton.addEventListener('click', refreshAllRecipes);
     }
 });
+function showRecipeDetails(recipe) {
+    // Create or get modal container
+    let modal = document.getElementById('recipe-modal');
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'recipe-modal';
+        modal.className = 'modal';
+        document.body.appendChild(modal);
+    }
+
+    // Populate modal with recipe details
+    modal.innerHTML = `
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>${recipe.title}</h2>
+            <img src="${recipe.image}" alt="${recipe.title}" style="max-width: 300px;">
+            <p><strong>Preparation Time:</strong> ${recipe.prepTime}</p>
+            <p><strong>Calories:</strong> ${recipe.calories}</p>
+            
+            <h3>Ingredients:</h3>
+            <ul>
+                ${recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+            </ul>
+            
+            <h3>Steps:</h3>
+            <ol>
+                ${recipe.steps.map(step => `<li>${step}</li>`).join('')}
+            </ol>
+            
+            <h3>Nutrition Information:</h3>
+            <p>Protein: ${recipe.nutritionInfo.protein}</p>
+            <p>Carbs: ${recipe.nutritionInfo.carbs}</p>
+            <p>Fats: ${recipe.nutritionInfo.fats}</p>
+            <p>Fiber: ${recipe.nutritionInfo.fiber}</p>
+        </div>
+    `;
+    // Show modal
+    modal.style.display = 'block';
+
+    // Close modal when clicking the X
+    const closeBtn = modal.querySelector('.close');
+    closeBtn.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    }
+}
+
+// Modify your updateCategory function to add click listeners
+function updateCategory(category) {
+    const recipe = getRandomRecipe(category);
+    if (!recipe) return;
+
+    const titleElement = document.querySelector(`#${category}-title`);
+    const imgElement = document.querySelector(`#${category}-img`);
+    
+    if (!titleElement || !imgElement) {
+        console.error(`Elements for ${category} not found`);
+        return;
+    }
+
+    titleElement.textContent = recipe.title;
+    imgElement.src = recipe.image;
+    imgElement.alt = recipe.title;
+
+    // Add click listener to title
+    titleElement.style.cursor = 'pointer';
+    titleElement.onclick = () => showRecipeDetails(recipe);
+    // Add click listener to image
+    imgElement.style.cursor = 'pointer';
+    imgElement.onclick = () => showRecipeDetails(recipe);
+}
