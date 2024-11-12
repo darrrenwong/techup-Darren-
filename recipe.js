@@ -234,63 +234,432 @@ const recipes = {
     }
 },
 // ... remaining recipes ...
-        {
-            title: "Breakfast Quinoa Bowl",
-            image: "/images/bowl.png"
-        },
-        {
-            title: "Egg Wrap",
-            image: "/images/egg wrap.png"
-        }
+{
+    title: "Breakfast Quinoa Bowl",
+    image: "/images/bowl.png",
+    prepTime: "25 minutes",
+    calories: 310,
+    ingredients: [
+        "1/2 cup quinoa",
+        "1 cup milk of choice",
+        "1 banana, sliced",
+        "1 tablespoon honey",
+        "2 tablespoons sliced almonds",
+        "1/4 cup mixed berries",
+        "Optional: 1 tablespoon chia seeds"
+    ],
+    steps: [
+        "Rinse quinoa thoroughly",
+        "Cook quinoa with milk until fluffy (about 15-20 minutes)",
+        "Transfer to serving bowl",
+        "Top with sliced banana and berries",
+        "Drizzle with honey",
+        "Sprinkle with sliced almonds",
+        "Add chia seeds if desired",
+        "Serve while warm"
+    ],
+    nutritionInfo: {
+        protein: "12g",
+        carbs: "48g",
+        fats: "9g",
+        fiber: "6g"
+    }
+},
+{
+    title: "Egg Wrap",
+    image: "/images/egg wrap.png",
+    prepTime: "10 minutes",
+    calories: 260,
+    ingredients: [
+        "3 large eggs",
+        "1/4 cup shredded cheese",
+        "1 handful fresh spinach",
+        "2 slices turkey breast",
+        "Salt and pepper to taste"
+    ],
+    steps: [
+        "Whisk eggs with salt and pepper",
+        "Heat a non-stick pan over medium heat",
+        "Pour eggs to form a thin circle (like a crepe)",
+        "When eggs are almost set, add cheese",
+        "Layer spinach and turkey on one half",
+        "Fold edges over to form a wrap",
+        "Cook for another minute until cheese melts",
+        "Serve immediately while warm"
+    ],
+    nutritionInfo: {
+        protein: "24g",
+        carbs: "3g",
+        fats: "16g",
+        fiber: "1g"
+    }
+},
         // Add more breakfast recipes here
     ],
     lunch: [
         {
             title: "Chicken & Veggie Stir-Fry with Rice",
-            image: "/images/brocoli.png"
+            image: "/images/brocoli.png",
+            prepTime: "25 minutes",
+            calories: 420,
+            ingredients: [
+                "2 chicken breasts, diced",
+                "1 cup broccoli florets",
+                "1 carrot, sliced",
+                "1 bell pepper, sliced",
+                "2 cups cooked rice",
+                "2 tablespoons soy sauce",
+                "1 tablespoon ginger, minced",
+                "2 cloves garlic, minced",
+                "Salt and pepper to taste"
+            ],
+            steps: [
+                "Cook rice according to package instructions",
+                "Season diced chicken with salt and pepper",
+                "Cook chicken in a non-stick pan until golden",
+                "Remove chicken, set aside",
+                "In the same pan, stir-fry vegetables until crisp-tender",
+                "Add garlic and ginger, cook for 1 minute",
+                "Return chicken to pan",
+                "Add soy sauce and stir to combine",
+                "Serve hot over rice"
+            ],
+            nutritionInfo: {
+                protein: "35g",
+                carbs: "45g",
+                fats: "10g",
+                fiber: "5g"
+            }
         },
         {
             title: "Salmon & Avocado Salad",
-            image: "/images/saladS.png"
+            image: "/images/saladS.png",
+            prepTime: "20 minutes",
+            calories: 370,
+            ingredients: [
+                "6 oz salmon fillet",
+                "1 avocado, sliced",
+                "3 cups mixed salad greens",
+                "1/2 cucumber, sliced",
+                "1/2 cup cherry tomatoes",
+                "Dressing:",
+                "1 tablespoon olive oil",
+                "Salt and pepper to taste"
+            ],
+            steps: [
+                "Season salmon with salt and pepper",
+                "Cook salmon in a non-stick pan (4-5 minutes per side)",
+                "Arrange salad greens on a plate",
+                "Top with sliced cucumber and tomatoes",
+                "Add sliced avocado",
+                "Break salmon into large pieces and place on top",
+                "Drizzle with olive oil and season to taste",
+                "Serve immediately"
+            ],
+            nutritionInfo: {
+                protein: "32g",
+                carbs: "10g",
+                fats: "27g",
+                fiber: "7g"
+            }
         },
         {
             title: "Ground Beef & Quinoa Bowl",
-            image: "/images/bowl2.png"
+            image: "/images/bowl2.png",
+            prepTime: "25 minutes",
+            calories: 450,
+            ingredients: [
+                "1/2 cup quinoa",
+                "1 cup water",
+                "1/2 lb lean ground beef",
+                "1 cup spinach",
+                "1/2 cup cherry tomatoes, halved",
+                "1/2 avocado, sliced",
+                "1 tablespoon olive oil",
+                "Salt and pepper to taste"
+            ],
+            steps: [
+                "Rinse quinoa and cook with water until fluffy (about 15 minutes)",
+                "Season ground beef with salt and pepper",
+                "Cook beef in a pan until browned",
+                "Add spinach to beef and cook until wilted",
+                "Divide quinoa into bowls",
+                "Top with beef and spinach mixture",
+                "Add cherry tomatoes and avocado slices",
+                "Drizzle with olive oil and serve"
+            ],
+            nutritionInfo: {
+                protein: "35g",
+                carbs: "32g",
+                fats: "25g",
+                fiber: "8g"
+            }
         },
         {
             title: "Shrimp & Avocado Wrap",
-            image: "/images/wrap2.png"
+            image: "/images/wrap2.png",
+            prepTime: "15 minutes",
+            calories: 380,
+            ingredients: [
+                "8 large shrimp, peeled and deveined",
+                "1 large tortilla wrap",
+                "1 avocado, sliced",
+                "1 cup lettuce, chopped",
+                "1/2 cup cherry tomatoes, halved",
+                "1 tablespoon olive oil",
+                "Salt and pepper to taste"
+            ],
+            steps: [
+                "Season shrimp with salt and pepper",
+                "Cook shrimp in olive oil until pink (2-3 minutes per side)",
+                "Warm tortilla slightly",
+                "Layer lettuce on the tortilla",
+                "Add sliced avocado and tomatoes",
+                "Place cooked shrimp on top",
+                "Roll the wrap tightly, tucking in the sides",
+                "Cut diagonally and serve"
+            ],
+            nutritionInfo: {
+                protein: "24g",
+                carbs: "28g",
+                fats: "22g",
+                fiber: "9g"
+            }
         },
         {
             title: "Chicken & Lentil Soup",
-            image: "/images/lentil.png"
+            image: "/images/lentil.png",
+            prepTime: "40 minutes",
+            calories: 320,
+            ingredients: [
+                "2 chicken breasts, diced",
+                "1 cup red lentils",
+                "2 carrots, chopped",
+                "2 celery stalks, chopped",
+                "1 onion, diced",
+                "4 cups chicken broth",
+                "2 cups water",
+                "2 cloves garlic, minced",
+                "Salt and pepper to taste"
+            ],
+            steps: [
+                "Rinse lentils thoroughly",
+                "Cook diced chicken in the pot until no longer pink",
+                "Add onion, carrots, and celery, cook until softened",
+                "Add garlic and cook for 1 minute",
+                "Add lentils, broth, and water",
+                "Bring to a boil, then reduce heat",
+                "Simmer for 20-25 minutes until lentils are tender",
+                "Season with salt and pepper",
+                "Serve hot"
+            ],
+            nutritionInfo: {
+                protein: "28g",
+                carbs: "35g",
+                fats: "6g",
+                fiber: "12g"
+            }
         },
         {
             title: "Beef & Veggie Stir-Fry",
-            image: "/images/beef stir.png"
+            image: "/images/beef stir.png",
+            prepTime: "25 minutes",
+            calories: 380,
+            ingredients: [
+                "1/2 lb beef strips",
+                "2 cups broccoli florets",
+                "1 carrot, sliced",
+                "1 bell pepper, sliced",
+                "1 cup snap peas",
+                "2 tablespoons soy sauce",
+                "2 cloves garlic, minced",
+                "1 tablespoon ginger, minced",
+                "Salt and pepper to taste"
+            ],
+            steps: [
+                "Season beef strips with salt and pepper",
+                "Cook beef in a hot pan until browned (2-3 minutes)",
+                "Remove beef and set aside",
+                "In the same pan, stir-fry vegetables until crisp-tender",
+                "Add garlic and ginger, cook for 1 minute",
+                "Return beef to pan",
+                "Add soy sauce and stir to combine",
+                "Cook for additional 2 minutes",
+                "Serve hot"
+            ],
+            nutritionInfo: {
+                protein: "32g",
+                carbs: "18g",
+                fats: "20g",
+                fiber: "6g"
+            }
         },
         {
             title: "Chicken & Potato Bake",
-            image: "/images/potato.png"
+            image: "/images/potato.png",
+            prepTime: "1 hour",
+            calories: 420,
+            ingredients: [
+                "4 chicken thighs",
+                "4 medium potatoes, quartered",
+                "2 carrots, chopped",
+                "1 onion, chunked",
+                "3 cloves garlic, whole",
+                "2 tablespoons olive oil",
+                "1 teaspoon dried rosemary",
+                "Salt and pepper to taste"
+            ],
+            steps: [
+                "Preheat oven to 400°F (200°C)",
+                "Place chicken thighs in a baking dish",
+                "Arrange potatoes, carrots, onion, and garlic around chicken",
+                "Drizzle with olive oil",
+                "Season everything with rosemary, salt, and pepper",
+                "Cover with foil and bake for 30 minutes",
+                "Remove foil and bake for additional 20-25 minutes",
+                "Check chicken is cooked through",
+                "Serve hot"
+            ],
+            nutritionInfo: {
+                protein: "32g",
+                carbs: "38g",
+                fats: "18g",
+                fiber: "5g"
+            }
         },
         {
-            title: "Spicy Chicken & Veggie Wrap",
-            image: "/images/veggie wrap2.png"
+            title: "Chicken & Veggie Wrap",
+            image: "/images/veggie wrap2.png",
+            prepTime: "20 minutes",
+            calories: 380,
+            ingredients: [
+                "2 chicken breasts, sliced",
+                "2 large tortilla wraps",
+                "1 cup lettuce, chopped",
+                "1 bell pepper, sliced",
+                "1/2 avocado, sliced",
+                "Salt and pepper to taste"
+            ],
+            steps: [
+                "Season chicken with salt and pepper",
+                "Cook chicken in a pan until done (6-8 minutes)",
+                "Warm tortillas slightly",
+                "Layer lettuce on each tortilla",
+                "Add cooked chicken",
+                "Top with bell peppers and avocado",
+                "Roll tightly and cut diagonally",
+                "Serve immediately"
+            ],
+            nutritionInfo: {
+                protein: "28g",
+                carbs: "32g",
+                fats: "15g",
+                fiber: "8g"
+            }
         },
         {
             title: "Tomato Salmon Skillet",
-            image: "/images/skillet.png"
+            image: "/images/skillet.png",
+            prepTime: "25 minutes",
+            calories: 360,
+            ingredients: [
+                "2 salmon fillets",
+                "2 cups cherry tomatoes",
+                "2 cups spinach",
+                "3 cloves garlic, minced",
+                "1 tablespoon olive oil",
+                "1/2 cup chicken broth",
+                "Salt and pepper to taste"
+            ],
+            steps: [
+                "Season salmon fillets with salt and pepper",
+                "Heat olive oil in a large skillet",
+                "Cook salmon skin-side up for 4 minutes",
+                "Flip and cook for another 3-4 minutes",
+                "Remove salmon and set aside",
+                "In same skillet, add garlic and tomatoes",
+                "Cook until tomatoes start to burst",
+                "Add spinach and chicken broth, cook until wilted",
+                "Return salmon to skillet to warm through",
+                "Serve hot"
+            ],
+            nutritionInfo: {
+                protein: "35g",
+                carbs: "12g",
+                fats: "22g",
+                fiber: "4g"
+            }
         },
         {
-            title: "Shrimp & Avocado Rice Bow",
-            image: "/images/shrimp.png"
-        }
+            title: "Shrimp & Avocado Rice Bowl",
+            image: "/images/shrimp.png",
+            prepTime: "20 minutes",
+            calories: 410,
+            ingredients: [
+                "12 large shrimp, peeled and deveined",
+                "1 cup cooked white rice",
+                "1 avocado, sliced",
+                "1 cup cucumber, diced",
+                "1/2 cup cherry tomatoes, halved",
+                "1 tablespoon olive oil",
+                "2 cloves garlic, minced",
+                "Salt and pepper to taste"
+            ],
+            steps: [
+                "Cook rice according to package instructions",
+                "Season shrimp with salt and pepper",
+                "Heat olive oil in a pan",
+                "Add garlic and cook for 30 seconds",
+                "Add shrimp and cook until pink (2-3 minutes per side)",
+                "Divide rice between bowls",
+                "Top with cooked shrimp",
+                "Add sliced avocado, cucumber, and tomatoes",
+                "Serve immediately"
+            ],
+            nutritionInfo: {
+                protein: "26g",
+                carbs: "42g",
+                fats: "20g",
+                fiber: "7g"
+            }
+        },
         // Add more lunch recipes here
     ],
     dinner: [
         {
             title: "Chicken & Spinach Stuffed Peppers",
-            image: "/images/stuffed.png"
+            image: "/images/stuffed.png",
+            prepTime: "45 minutes",
+            calories: 340,
+            ingredients: [
+                "4 large bell peppers, halved lengthwise",
+                "2 chicken breasts, diced",
+                "2 cups fresh spinach",
+                "1 cup cooked rice",
+                "1 cup shredded mozzarella",
+                "2 cloves garlic, minced",
+                "1 tablespoon olive oil",
+                "Salt and pepper to taste"
+            ],
+            steps: [
+                "Preheat oven to 375°F (190°C)",
+                "Remove seeds from peppers",
+                "Cook rice according to package instructions",
+                "Heat olive oil in a pan",
+                "Cook diced chicken until done",
+                "Add garlic and spinach, cook until wilted",
+                "Mix chicken mixture with cooked rice",
+                "Fill pepper halves with mixture",
+                "Top with mozzarella cheese",
+                "Bake for 25-30 minutes until peppers are tender",
+                "Serve hot"
+            ],
+            nutritionInfo: {
+                protein: "29g",
+                carbs: "28g",
+                fats: "15g",
+                fiber: "4g"
+            }
         },
         {
             title: "Salmon & Edamame Stir-Fry",
