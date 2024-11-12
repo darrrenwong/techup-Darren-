@@ -131,44 +131,44 @@ const recipes = {
     ],
     snacks: [
         {
-            title: "Avocado-Yogurt Dipy",
+            title: "Avocado-Yogurt Dip",
             image: "/images/dip.png"
         },
         {
             title: "Oven Baked Sweet Potato Fries",
-            image: "/images/sweet potato.png"
+            image: "/images/sweet-potato.png"  // Fixed: Use hyphens instead of spaces
         },
         {
-            title: "Apple with Peanut Butter",
-            image: "/images/apple.png"
+            title: "Apple Wedges & Peanut Butter",
+            image: "/images/apple-with-pb.png"  // Fixed: Use hyphens instead of spaces
         },
         {
-            title: "Hummus with Carrots",
-            image: "/images/hummus.png"
+            title: "Roasted Sheet-Pan Veggies",
+            image: "/images/pan-fry.png"  // Fixed: Use hyphen
         },
         {
-            title: "Trail Mix",
-            image: "/images/trail-mix.png"
+            title: "Air-Fryer Zucchini Fries",
+            image: "/images/z-fries.png"  // Fixed: Use hyphen
         },
         {
-            title: "Cheese and Crackers",
-            image: "/images/cheese-crackers.png"
+            title: "Broccoli With Spices",
+            image: "/images/spiced-broccoli.png"  // Fixed: Spelling and hyphen
         },
         {
-            title: "Smoothie",
-            image: "/images/smoothie.png"
+            title: "Mixed-Berry Smoothie",
+            image: "/images/mixed-berries.png"  // Fixed: Remove space before .png
         },
         {
-            title: "Popcorn",
-            image: "/images/popcorn.png"
+            title: "Chia Seed Pudding",
+            image: "/images/pudding.png"
         },
         {
-            title: "Energy Balls",
-            image: "/images/energy-balls.png"
+            title: "Rice Cakes with Peanut Butter",
+            image: "/images/rice-cake.png"  // Fixed: Use hyphen
         },
         {
-            title: "Fruit Salad",
-            image: "/images/fruit-salad.png"
+            title: "Fresh Fruit Salad",
+            image: "/images/fruit-salad.png"  // Fixed: Use hyphen
         }
         // Add more snack recipes here
     ]
