@@ -38,8 +38,8 @@ const recipes = {
             image: "/images/bowl.png"
         },
         {
-            title: "Egg and Avocado Toast",
-            image: "/images/eggsss.png"
+            title: "Egg Wrap",
+            image: "/images/egg wrap.png"
         }
         // Add more breakfast recipes here
     ],
@@ -88,7 +88,7 @@ const recipes = {
     ],
     dinner: [
         {
-            title: "Chicken & Spinach Stuffed Bell Peppers",
+            title: "Chicken & Spinach Stuffed Peppers",
             image: "/images/stuffed.png"
         },
         {
