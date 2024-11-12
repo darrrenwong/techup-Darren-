@@ -136,27 +136,27 @@ const recipes = {
         },
         {
             title: "Oven Baked Sweet Potato Fries",
-            image: "/images/sweet-potato.png"  // Fixed: Use hyphens instead of spaces
+            image: "/images/sweet potato.png"  // Fixed: Use hyphens instead of spaces
         },
         {
             title: "Apple Wedges & Peanut Butter",
-            image: "/images/apple-with-pb.png"  // Fixed: Use hyphens instead of spaces
+            image: "/images/apple with pb.png"  // Fixed: Use hyphens instead of spaces
         },
         {
             title: "Roasted Sheet-Pan Veggies",
-            image: "/images/pan-fry.png"  // Fixed: Use hyphen
+            image: "/images/pan fry.png"  // Fixed: Use hyphen
         },
         {
             title: "Air-Fryer Zucchini Fries",
-            image: "/images/z-fries.png"  // Fixed: Use hyphen
+            image: "/images/zfries.png"  // Fixed: Use hyphen
         },
         {
             title: "Broccoli With Spices",
-            image: "/images/spiced-broccoli.png"  // Fixed: Spelling and hyphen
+            image: "/images/spiced broccoli.png"  // Fixed: Spelling and hyphen
         },
         {
             title: "Mixed-Berry Smoothie",
-            image: "/images/mixed-berries.png"  // Fixed: Remove space before .png
+            image: "/images/mixed berries.png"  // Fixed: Remove space before .png
         },
         {
             title: "Chia Seed Pudding",
@@ -164,11 +164,11 @@ const recipes = {
         },
         {
             title: "Rice Cakes with Peanut Butter",
-            image: "/images/rice-cake.png"  // Fixed: Use hyphen
+            image: "/images/rice cake.png"  // Fixed: Use hyphen
         },
         {
             title: "Fresh Fruit Salad",
-            image: "/images/fruit-salad.png"  // Fixed: Use hyphen
+            image: "/images/fruit salad.png"  // Fixed: Use hyphen
         }
         // Add more snack recipes here
     ]
