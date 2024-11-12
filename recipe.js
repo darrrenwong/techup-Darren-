@@ -38,7 +38,7 @@ const recipes = {
             image: "/images/bowl.png"
         },
         {
-            title: "Toasted Bread with Eggs and Avocado",
+            title: "Egg and Avocado Toast",
             image: "/images/eggsss.png"
         }
         // Add more breakfast recipes here
@@ -148,11 +148,11 @@ const recipes = {
         },
         {
             title: "Air-Fryer Zucchini Fries",
-            image: "/images/zfries.png"  // Fixed: Use hyphen
+            image: "/images/z fries.png"  // Fixed: Use hyphen
         },
         {
             title: "Broccoli With Spices",
-            image: "/images/spiced broccoli.png"  // Fixed: Spelling and hyphen
+            image: "/images/spiced brocoli.png"  // Fixed: Spelling and hyphen
         },
         {
             title: "Mixed-Berry Smoothie",
@@ -180,6 +180,8 @@ function getRandomRecipe(category) {
     return categoryRecipes[Math.floor(Math.random() * categoryRecipes.length)];
 }
 
+// ... existing recipe data ...
+
 // Function to update a single category
 function updateCategory(category) {
     const recipe = getRandomRecipe(category);
@@ -187,6 +189,17 @@ function updateCategory(category) {
     const img = document.getElementById(`${category}-img`);
     img.src = recipe.image;
     img.alt = recipe.title;
+}
+
+// Add click event listeners to refresh buttons
+function initializeRefreshButtons() {
+    const categories = ['breakfast', 'lunch', 'dinner', 'snacks'];
+    categories.forEach(category => {
+        const button = document.getElementById(`${category}-refresh`);
+        if (button) {
+            button.addEventListener('click', () => updateCategory(category));
+        }
+    });
 }
 
 // Function to refresh all recipes
@@ -197,5 +210,8 @@ function refreshAllRecipes() {
     updateCategory('snacks');
 }
 
-// Initialize recipes when page loads
-window.onload = refreshAllRecipes;
+// Initialize recipes and buttons when page loads
+window.onload = () => {
+    refreshAllRecipes();
+    initializeRefreshButtons();
+};
