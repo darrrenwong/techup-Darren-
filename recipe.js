@@ -6,14 +6,14 @@ const recipes = {
             image: "/images/eggs.png"
         },
         {
-            title: "Pancakes with Maple Syrup",
-            image: "/images/pancakes.png"
+            title: "Greek Yogurt Berry Bowl",
+            image: "/images/yogurt.png"
         },
         {
-            title: "Oatmeal with Berries",
-            image: "/images/oatmeal.png"
+            title: "Veggie Omelette",
+            image: "/images/Veggie.png"
         }
-        // Add more breakfast recipes here
+        
     ],
     lunch: [
         {
