@@ -97,26 +97,6 @@ body {
 .navigation-links a:hover::after {
   width: 80%;
 }
-/* Modern Reset and Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  background: #f0f2f5;
-  min-height: 100vh;
-  padding: 2rem;
-}
-.welcome h1 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #2c3e50;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-  margin-right: 10px;
-}
 /* Main container styling */
 .ingredient-selector {
   background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.1));
@@ -284,6 +264,7 @@ body {
       font-size: 1.2em;
   }
 }
+/* Icon styling */
 .ingredient-options label i {
   margin-right: 8px;
   width: 20px;
@@ -301,3 +282,184 @@ body {
   transform: scale(1.1);
   transition: transform 0.2s ease;
 }
+/* Modal and Results Styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  margin: 3% auto;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  color: #2196F3;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  font-weight: 600;
+  background: linear-gradient(45deg, #2196F3, #00BCD4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #666;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.close:hover {
+  background: rgba(0, 0, 0, 0.1);
+  transform: rotate(90deg);
+}
+
+/* Recipe Grid Styling */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+.recipe-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card h3 {
+  padding: 15px 20px 10px;
+  margin: 0;
+  color: #333;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.recipe-card p {
+  padding: 0 20px;
+  margin: 5px 0;
+  color: #666;
+  font-size: 0.95em;
+}
+
+.recipe-category {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(33, 150, 243, 0.9);
+  color: white !important;
+  padding: 5px 12px !important;
+  border-radius: 20px;
+  font-size: 0.8em !important;
+  font-weight: 500;
+  backdrop-filter: blur(5px);
+}
+
+.matching-ingredients {
+  color: #2196F3 !important;
+  font-weight: 500;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 10px !important;
+  padding-top: 10px !important;
+  padding-bottom: 15px !important;
+}
+
+/* Recipe Details Styling */
+.recipe-details {
+  padding: 20px;
+}
+
+.recipe-details h3 {
+  color: #2196F3;
+  margin: 20px 0 10px;
+  font-size: 1.4em;
+}
+
+.recipe-details ul, 
+.recipe-details ol {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.recipe-details li {
+  margin: 8px 0;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .modal-content {
+      margin: 5% auto;
+      padding: 20px;
+  }
+
+  .recipe-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 10px;
+  }
+
+  .recipe-card h3 {
+      font-size: 1.2em;
+  }
+
+  .modal-content h2 {
+      font-size: 1.8em;
+  }
+}
+
+/* Scrollbar Styling */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar
