@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meal Planner Dashboard</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="TasteLab.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
   <!-- Brand Section -->
@@ -22,7 +23,7 @@
           <img src="/images/Menu.png" style="height: 90px; width: 90px;" alt="Menu Icon" class="nav-icon">
             Food Menu
         </a>
-        <a href="/magic-kitchen.html">
+        <a href="/TasteLab.html">
           <img src="/images/Recipe.png" style="height: 90px; width: 90px;" alt="Magic Icon" class="nav-icon"> 
           TasteLab
         </a>
@@ -44,184 +45,130 @@
           <img src="/images/image copy.png" style="height: 100px; width: 100px;" alt="Avatar">
         </section>                   
 
-    <!-- Quick Start Recommendations Section -->
-    <section class="recommendations">
-      <h2>Quick Start Recommendations</h2>
-      <div class="recommendation-cards">
-        <!-- Recommendation Cards for Breakfast, Lunch, Dinner, Snacks -->
-        <div class="card">
-          <h3>Breakfast</h3>
-          <p>Avocado Toast with Eggs</p>
-          <img src="/images/eggs.png" alt="Avocado Toast" style="height: 250px; width: 250px;" />
-        </div>
-        <div class="card">
-          <h3>Lunch</h3>
-          <p>Grilled Chicken Salad</p>
-          <img src="/images/Chicken Salad.png" alt="Grilled Chicken Salad" />
-        </div>
-        <div class="card">
-          <h3>Dinner</h3>
-          <p>Salmon with Quinoa</p>
-          <img src="/images/Salmon.png" alt="Salmon with Quinoa" />
-        </div>
-        <div class="card">
-          <h3>Snacks</h3>
-          <p>Greek Yogurt with Honey</p>
-          <img src="/images/yogurt.png" alt="Greek Yogurt with Honey" />
-        </div>
-      </div>
-    </section>
+        <div class="ingredient-selector">
+            <h2>Select Your Ingredients</h2>
+            
+            <div class="ingredient-category">
+                <h3><i class="fas fa-cheese"></i> Dairy & Alternatives</h3>
+                <div class="ingredient-options">
+                    <label><input type="checkbox" name="ingredient" value="eggs"><i class="fas fa-egg"></i> Eggs</label>
+                    <label><input type="checkbox" name="ingredient" value="shredded-cheese"><i class="fas fa-cheese"></i> Shredded Cheese</label>
+                    <label><input type="checkbox" name="ingredient" value="milk"><i class="fas fa-wine-bottle"></i> Milk of Choice</label>
+                    <label><input type="checkbox" name="ingredient" value="greek-yogurt"><i class="fas fa-jar"></i> Greek Yogurt</label>
+                    <label><input type="checkbox" name="ingredient" value="mozzarella"><i class="fas fa-cheese"></i> Shredded Mozzarella</label>
+                </div>
+            </div>
 
-    <!-- Common Ingredients Section -->
-    <section class="ingredients">
-      <h2>What can you find in your kitchen? <img src="/images/cook.png" style="height: 50px; width: 50px;"</h2> 
-      <div class="ingredient-grid">
-        <div class="ingredient">
-          <div class="ingredient-icon">🥚</div>
-          <p>Eggs</p>
+            <div class="ingredient-category">
+                <h3><i class="fas fa-carrot"></i> Fruits & Vegetables</h3>
+                <div class="ingredient-options">
+                    <label><input type="checkbox" name="ingredient" value="spinach"><i class="fas fa-leaf"></i> Spinach</label>
+                    <label><input type="checkbox" name="ingredient" value="avocado"><i class="fas fa-seedling"></i> Avocado</label>
+                    <label><input type="checkbox" name="ingredient" value="bananas"><i class="fas fa-seedling"></i> Bananas</label>
+                    <label><input type="checkbox" name="ingredient" value="apple"><i class="fas fa-apple-whole"></i> Apple</label>
+                    <label><input type="checkbox" name="ingredient" value="mixed-berries"><i class="fas fa-apple-whole"></i> Mixed Berries</label>
+                    <label><input type="checkbox" name="ingredient" value="bell-peppers"><i class="fas fa-pepper-hot"></i> Bell Peppers</label>
+                    <label><input type="checkbox" name="ingredient" value="mushrooms"><i class="fas fa-seedling"></i> Mushrooms</label>
+                    <label><input type="checkbox" name="ingredient" value="onions"><i class="fas fa-circle"></i> Onions</label>
+                    <label><input type="checkbox" name="ingredient" value="lime"><i class="fas fa-lemon"></i> Lime</label>
+                    <label><input type="checkbox" name="ingredient" value="lettuce"><i class="fas fa-leaf"></i> Lettuce</label>
+                    <label><input type="checkbox" name="ingredient" value="cherry-tomatoes"><i class="fas fa-circle"></i> Cherry Tomatoes</label>
+                    <label><input type="checkbox" name="ingredient" value="cucumber"><i class="fas fa-seedling"></i> Cucumber</label>
+                    <label><input type="checkbox" name="ingredient" value="potatoes"><i class="fas fa-circle"></i> Potatoes</label>
+                    <label><input type="checkbox" name="ingredient" value="snap-peas"><i class="fas fa-seedling"></i> Snap Peas</label>
+                    <label><input type="checkbox" name="ingredient" value="celery"><i class="fas fa-seedling"></i> Celery Stalks</label>
+                    <label><input type="checkbox" name="ingredient" value="sweet-potatoes"><i class="fas fa-circle"></i> Sweet Potatoes</label>
+                    <label><input type="checkbox" name="ingredient" value="zucchini"><i class="fas fa-seedling"></i> Zucchini</label>
+                    <label><input type="checkbox" name="ingredient" value="tomatoes"><i class="fas fa-circle"></i> Tomatoes</label>
+                    <label><input type="checkbox" name="ingredient" value="orange"><i class="fas fa-circle"></i> Orange</label>
+                    <label><input type="checkbox" name="ingredient" value="grapes"><i class="fas fa-wine-glass"></i> Grapes</label>
+                    <label><input type="checkbox" name="ingredient" value="fresh-basil"><i class="fas fa-leaf"></i> Fresh Basil</label>
+                    <label><input type="checkbox" name="ingredient" value="garlic"><i class="fas fa-circle"></i> Garlic</label>
+                    <label><input type="checkbox" name="ingredient" value="ginger"><i class="fas fa-seedling"></i> Ginger</label>
+                    <label><input type="checkbox" name="ingredient" value="mixed-salad-greens"><i class="fas fa-leaf"></i> Mixed Salad Greens</label>
+                </div>
+            </div>
+
+            <div class="ingredient-category">
+                <h3><i class="fas fa-drumstick-bite"></i> Proteins & Meats</h3>
+                <div class="ingredient-options">
+                    <label><input type="checkbox" name="ingredient" value="turkey"><i class="fas fa-drumstick-bite"></i> Turkey</label>
+                    <label><input type="checkbox" name="ingredient" value="chicken-breast"><i class="fas fa-drumstick-bite"></i> Chicken</label>
+                    <label><input type="checkbox" name="ingredient" value="shrimp"><i class="fas fa-fish"></i> Shrimp</label>
+                    <label><input type="checkbox" name="ingredient" value="ground-beef"><i class="fas fa-utensils"></i> Lean Ground Beef</label>
+                    <label><input type="checkbox" name="ingredient" value="beef-strips"><i class="fas fa-utensils"></i> Beef Strips</label>
+                    <label><input type="checkbox" name="ingredient" value="salmon"><i class="fas fa-fish"></i> Salmon Fillets</label>
+                    <label><input type="checkbox" name="ingredient" value="cod"><i class="fas fa-fish"></i> Cod Fillets</label>
+                    <label><input type="checkbox" name="ingredient" value="edamame"><i class="fas fa-seedling"></i> Shelled Edamame</label>
+                    <label><input type="checkbox" name="ingredient" value="chicken-soup"><i class="fas fa-drumstick-bite"></i> Chicken (for soup)</label>
+                </div>
+            </div>
+
+            <div class="ingredient-category">
+                <h3><i class="fas fa-bread-slice"></i> Grains & Legumes</h3>
+                <div class="ingredient-options">
+                    <label><input type="checkbox" name="ingredient" value="whole-grain-bread"><i class="fas fa-bread-slice"></i> Whole Grain Bread</label>
+                    <label><input type="checkbox" name="ingredient" value="flour-tortilla"><i class="fas fa-circle"></i> Flour Tortilla</label>
+                    <label><input type="checkbox" name="ingredient" value="quinoa"><i class="fas fa-seedling"></i> Quinoa</label>
+                    <label><input type="checkbox" name="ingredient" value="tortilla-wraps"><i class="fas fa-circle"></i> Tortilla Wraps</label>
+                    <label><input type="checkbox" name="ingredient" value="white-rice"><i class="fas fa-bowl-rice"></i> White Rice</label>
+                    <label><input type="checkbox" name="ingredient" value="red-lentils"><i class="fas fa-circle"></i> Red Lentils</label>
+                    <label><input type="checkbox" name="ingredient" value="rice-cakes"><i class="fas fa-cookie"></i> Rice Cakes</label>
+                </div>
+            </div>
+
+            <div class="ingredient-category">
+                <h3><i class="fas fa-seedling"></i> Nuts & Seeds</h3>
+                <div class="ingredient-options">
+                    <label><input type="checkbox" name="ingredient" value="chia-seeds"><i class="fas fa-seedling"></i> Chia Seeds</label>
+                    <label><input type="checkbox" name="ingredient" value="granola"><i class="fas fa-wheat-awn"></i> Granola</label>
+                    <label><input type="checkbox" name="ingredient" value="walnuts"><i class="fas fa-seedling"></i> Walnuts</label>
+                    <label><input type="checkbox" name="ingredient" value="sliced-almonds"><i class="fas fa-seedling"></i> Sliced Almonds</label>
+                </div>
+            </div>
+
+            <div class="ingredient-category">
+                <h3><i class="fas fa-flask"></i> Condiments & Spices</h3>
+                <div class="ingredient-options">
+                    <label><input type="checkbox" name="ingredient" value="honey"><i class="fas fa-jar"></i> Honey</label>
+                    <label><input type="checkbox" name="ingredient" value="maple-syrup"><i class="fas fa-bottle-droplet"></i> Maple Syrup/Honey</label>
+                    <label><input type="checkbox" name="ingredient" value="vanilla-extract"><i class="fas fa-bottle-droplet"></i> Vanilla Extract</label>
+                    <label><input type="checkbox" name="ingredient" value="salsa"><i class="fas fa-pepper-hot"></i> Salsa</label>
+                    <label><input type="checkbox" name="ingredient" value="cinnamon"><i class="fas fa-mortar-pestle"></i> Cinnamon</label>
+                    <label><input type="checkbox" name="ingredient" value="salt-pepper"><i class="fas fa-utensils"></i> Salt & Pepper</label>
+                    <label><input type="checkbox" name="ingredient" value="butter"><i class="fas fa-square"></i> Butter</label>
+                    <label><input type="checkbox" name="ingredient" value="olive-oil"><i class="fas fa-bottle-droplet"></i> Olive Oil</label>
+                    <label><input type="checkbox" name="ingredient" value="soy-sauce"><i class="fas fa-bottle-droplet"></i> Soy Sauce</label>
+                    <label><input type="checkbox" name="ingredient" value="dried-rosemary"><i class="fas fa-leaf"></i> Dried Rosemary</label>
+                    <label><input type="checkbox" name="ingredient" value="paprika"><i class="fas fa-mortar-pestle"></i> Paprika</label>
+                    <label><input type="checkbox" name="ingredient" value="cumin"><i class="fas fa-mortar-pestle"></i> Cumin</label>
+                    <label><input type="checkbox" name="ingredient" value="oregano"><i class="fas fa-leaf"></i> Oregano</label>
+                    <label><input type="checkbox" name="ingredient" value="peanut-butter"><i class="fas fa-jar"></i> Peanut Butter</label>
+                </div>
+            </div>
+
+            <div class="ingredient-category">
+                <h3><i class="fas fa-glass-water"></i> Broth & Liquids</h3>
+                <div class="ingredient-options">
+                    <label><input type="checkbox" name="ingredient" value="chicken-broth"><i class="fas fa-mug-hot"></i> Chicken Broth</label>
+                    <label><input type="checkbox" name="ingredient" value="water"><i class="fas fa-droplet"></i> Water</label>
+                    <label><input type="checkbox" name="ingredient" value="coconut-water"><i class="fas fa-glass-water"></i> Coconut Water</label>
+                </div>
+            </div>
+
+            <div class="ingredient-category">
+                <h3><i class="fas fa-cube"></i> Other</h3>
+                <div class="ingredient-options">
+                    <label><input type="checkbox" name="ingredient" value="ice-cubes"><i class="fas fa-cube"></i> Ice Cubes</label>
+                </div>
+            </div>
+
+            <button id="findRecipes" class="recipe-button">Find Recipes</button>
         </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🍅</div>
-          <p>Tomatoes</p>
+
+        <div id="recipeResults" class="recipe-results">
+            <!-- Recipe results will be displayed here -->
         </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🧀</div>
-          <p>Cheese</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🌿</div>
-          <p>Spinach</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🥑</div>
-          <p>Avocado</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🍞</div>
-          <p>Whole grain bread / wraps / rice cakes</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🍶</div>
-          <p>Greek yogurt</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🍯</div>
-          <p>Honey</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🥜</div>
-          <p>Nuts (almonds, walnuts, etc.)</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🧄</div>
-          <p>Garlic</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🌶️</div>
-          <p>Bell peppers</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🧅</div>
-          <p>Onions</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🥕</div>
-          <p>Carrots</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🥬</div>
-          <p>Lettuce / mixed greens</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🍗</div>
-          <p>Chicken</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🍚</div>
-          <p>Rice</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🥔</div>
-          <p>Potatoes</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🍤</div>
-          <p>Shrimp</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🐟</div>
-          <p>Salmon / cod / other fish</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🌱</div>
-          <p>Chia seeds</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🥒</div>
-          <p>Cucumber</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🍌</div>
-          <p>Bananas</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🥜</div>
-          <p>Peanut / almond butter</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🌰</div>
-          <p>Lentils</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🍓</div>
-          <p>Berries</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🥦</div>
-          <p>Broccoli</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🍚</div>
-          <p>Quinoa</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🫒</div>
-          <p>Olive oil</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🍎</div>
-          <p>Apple</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🌿</div>
-          <p>Celery</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🍃</div>
-          <p>Peas</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🍖</div>
-          <p>Ground beef</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🥒</div>
-          <p>Zucchini</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🟢</div>
-          <p>Edamame</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🍲</div>
-          <p>Chicken broth</p>
-        </div>
-        <div class="ingredient">
-          <div class="ingredient-icon">🌿</div>
-          <p>Spices and herbs</p>
-        </div>
-        </div>
-      </div>
     </section>
   </div>
 </body>
